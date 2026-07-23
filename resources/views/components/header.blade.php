@@ -1,6 +1,6 @@
 <header class="w-full flex flex-row items-center justify-between pt-7 pb-7 pl-24 pr-24 bg-[#0D1B2A]">
     <div class="w-full flex flex-row justify-between">
-        <x-logo />
+        <x-logo class="text-white" />
         <div class="w-116 bg-white flex flex-row justify-between rounded-2xl h-10">
             <input type="text" placeholder="Buscar no ByPlace..." class="bg-white w-[90%] pl-2 rounded-l-2xl placeholder-black text-sm focus:outline-none">
             <button class="w-[8%] items-center justify-center cursor-pointer">
@@ -15,10 +15,10 @@
             {{-- 1. SE O USUÁRIO NÃO ESTIVER LOGADO (VISITANTE) --}}
             @guest
             <div class="flex flex-row gap-2 items-center text-white text-sm">
-                <img src="{{ asset('assets/images/personCircle.svg') }}" alt="perfil" class="w-5 h-5">
+                <img src="{{ asset('assets/images/personCircle.svg') }}" alt="perfil" class="w-6 h-6">
                 <div class="flex flex-col text-left">
-                    <span class="text-xs text-gray-300">Bem-Vindo :)</span>
-                    <a href="{{ route('login') }}" class=" text-xs font-bold hover:underline">Entre ou Cadastre-se</a>
+                    <span class="text-sm text-gray-300">Bem-Vindo :)</span>
+                    <a href="{{ route('login') }}" class=" text-sm font-bold hover:underline">Entre ou Cadastre-se</a>
                 </div>
             </div>
             @endguest

@@ -6,7 +6,7 @@
     <title> {{ config('app.name')}} </title>
     @vite('resources/css/app.css')
 </head>
-<body class="min-h-screen">
+<body>
     {{ $slot }}
 </body>
 </html>
