@@ -6,7 +6,7 @@
             </a>
             <div class="flex flex-col gap-5">
                 <h2 class="font-semibold text-[#0D1B2A] text-xl">Acesse sua conta</h2>
-                <form action="" method="post" class="flex flex-col gap-2.5">
+                <form action="{{ route('login') }}" method="post" class="flex flex-col gap-2.5">
                     @csrf
                     <x-inputContainer label="Email *" type="email" name="email" placeholder="Seu e-mail..." required />
                     <x-inputContainer label="Senha *" type="password" name="password" placeholder="Sua senha..." required />

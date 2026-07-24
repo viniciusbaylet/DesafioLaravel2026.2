@@ -40,7 +40,7 @@
                     <!-- Form de Logout obrigatório no Laravel (via POST por segurança) -->
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="w-full text-left px-4 py-2 hover:bg-gray-100 text-red-600">
+                        <button type="submit" class="w-full text-left px-4 py-2 hover:bg-gray-100 text-red-600 cursor-pointer">
                             Sair
                         </button>
                     </form>
