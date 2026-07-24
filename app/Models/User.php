@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use App\Models\Address;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -58,5 +60,13 @@ class User extends Authenticatable
             'password' => 'hashed',
             'birth_date' => 'date',
         ];
+    }
+
+    /**
+     * synchronizes the users table with the addresses table
+     */
+    public function address()
+    {
+        return $this->hasOne(Address::class);
     }
 }

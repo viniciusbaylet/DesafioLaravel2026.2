@@ -9,7 +9,7 @@
         </div>
         <div class="flex flex-row gap-7 items-center justify-center">
             <button class="items-center justify-center cursor-pointer">
-                <img src="{{ asset('assets/images/buyCart.svg') }}" alt="carrinho de compras" class="w-7 h-7 hover:scale-103 transition">
+                <img src="{{ asset('assets/images/buyCart.svg') }}" alt="carrinho de compras" class="w-6 h-6 hover:scale-103 transition">
             </button>
 
             {{-- 1. SE O USUÁRIO NÃO ESTIVER LOGADO (VISITANTE) --}}
@@ -26,7 +26,7 @@
             {{-- 2. SE O USUÁRIO ESTIVER LOGADO --}}
             @auth
             <div class="relative group">
-                <button class="flex flex-row gap-1 items-center justify-center text-white cursor-pointer">
+                <button class="flex flex-row gap-2 items-center justify-center text-white cursor-pointer">
                     <img src="{{ asset('assets/images/personCircle.svg') }}" alt="perfil" class="w-5 h-5">
                     <span class="font-semibold">{{ Auth::user()->name }}</span>
                     <img src="{{ asset('assets/images/arrowDown.svg') }}" alt="seta" class="w-4 h-4">
