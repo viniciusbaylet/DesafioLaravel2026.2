@@ -1,4 +1,5 @@
 @props([
+    'id' => null,
     'label' => null,
     'type' => 'text',
     'name' => '',
@@ -14,7 +15,7 @@
     <input 
         type="{{ $type }}" 
         name="{{ $name }}" 
-        id="{{ $name }}" 
+        id="{{ $id ?? $name }}" 
         placeholder="{{ $placeholder }}" 
         {{ $attributes->merge(['class' => 'w-full bg-[#E0E0E0] rounded-xl h-10 px-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0D1B2A] transition']) }}
     >

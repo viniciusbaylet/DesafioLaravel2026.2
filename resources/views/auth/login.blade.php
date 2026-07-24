@@ -6,6 +6,13 @@
             </a>
             <div class="flex flex-col gap-5">
                 <h2 class="font-semibold text-[#0D1B2A] text-xl">Acesse sua conta</h2>
+
+                @error('email')
+                <div class="flex w-full items-center justify-center">
+                    <p class="text-sm text-red-500">{{ $message }}</p>
+                </div>
+                @enderror
+                
                 <form action="{{ route('login') }}" method="post" class="flex flex-col gap-2.5">
                     @csrf
                     <x-inputContainer label="Email *" type="email" name="email" placeholder="Seu e-mail..." required />
