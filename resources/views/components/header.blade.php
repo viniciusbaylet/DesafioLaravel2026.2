@@ -9,7 +9,7 @@
         </div>
         <div class="flex flex-row gap-7 items-center justify-center">
             <button class="items-center justify-center cursor-pointer">
-                <img src="{{ asset('assets/images/buyCart.svg') }}" alt="carrinho de compras" class="w-7 h-7">
+                <img src="{{ asset('assets/images/buyCart.svg') }}" alt="carrinho de compras" class="w-7 h-7 hover:scale-103 transition">
             </button>
 
             {{-- 1. SE O USUÁRIO NÃO ESTIVER LOGADO (VISITANTE) --}}

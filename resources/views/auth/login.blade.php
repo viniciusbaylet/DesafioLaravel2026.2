@@ -1,7 +1,7 @@
 <x-layout>
     <main class="w-full min-h-screen flex items-center justify-center bg-[#0D1B2A]">
         <div class="bg-white px-5 py-10 rounded-2xl flex flex-col gap-10 w-118">
-            <a href="{{ route('home') }}" class="cursor-pointer">
+            <a href="{{ route('home') }}" class="cursor-pointer hover:scale-103 transition">
                 <x-logo class="text-[#0D1B2A]" />
             </a>
             <div class="flex flex-col gap-5">

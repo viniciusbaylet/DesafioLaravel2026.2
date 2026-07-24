@@ -14,12 +14,14 @@
                     <x-inputContainer label="Email *" type="email" name="email" placeholder="Seu e-mail..." :value="old('email')" required />
                     <x-button type="submit" class="mt-3.5">Enviar</x-button>
                 </form>
-                <a href="{{ route('login') }}" class="text-sm text-[#0D1B2A] hover:underline flex w-full justify-center items-center gap-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                    </svg>
-                    Voltar
-                </a>
+                <div class="w-full flex items-center justify-center">
+                    <a href="{{ route('login') }}" class="text-sm text-[#0D1B2A] hover:underline flex w-15 justify-center items-center gap-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        </svg>
+                        Voltar
+                    </a>
+                </div>
             </div>
         </div>
     </main>
